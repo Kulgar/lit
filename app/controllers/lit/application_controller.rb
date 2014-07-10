@@ -1,5 +1,5 @@
 module Lit
-  class ApplicationController < ApplicationController
+  class ApplicationController < ActionController::Base
     before_filter :authenticate
     before_filter :stop_hits_counter
     after_filter :restore_hits_counter
